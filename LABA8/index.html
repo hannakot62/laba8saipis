@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/script.js"></script>
+    <title>laba8</title>
+    <style>
+        html {
+            background: rgb(116, 172, 230);
+            background: linear-gradient(320deg, rgba(116, 172, 230, 1) 0%, rgba(255, 102, 102, 1) 100%, rgba(226, 0, 255, 1) 100%) no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="task">
+        <div class="experts">
+            <p class="subtitle">Для решения проблемы, связанной с невозможностью предоставления жилья иногородним
+                студентам была созвана
+                группа
+                экспертов из двух человек (Э<span>i</span>) :</p>
+            <ol>
+                <li>Директор студенческого городка</li>
+                <li>Ректор университета</li>
+            </ol>
+        </div>
+        <div class="solutions">
+            <p class="subtitle">Было предложено несколько альтернатив (Z<span>i</span>) :</p>
+            <ol>
+                <li>Построить новое общежитие</li>
+                <li>Снять многоквартирный дом и частично оплачивать жилье</li>
+                <li>Назначить доплату незаселенным студентам</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="marks">
+        <p class="subtitle">Оценки экспертов предложенных альтернатив в матрице весов целей:</p>
+        <table class="marks-table">
+            <tr>
+                <th>Z<span>i</span> / Э<span>j</span></th>
+                <th>Z<span>1</span></th>
+                <th>Z<span>2</span></th>
+                <th>Z<span>3</span></th>
+            </tr>
+            <tr>
+                <td class="ex">Э<span>1</span></td>
+                <td>
+                    <form>
+                        <label for="mark-select"></label>
+                        <select name="mark" id="markEZ11">
+                            <option value=""> Добавьте оценку </option>
+                            <option value="0.1">0.1</option>
+                            <option value="0.2">0.2</option>
+                            <option value="0.3">0.3</option>
+                            <option value="0.4">0.4</option>
+                            <option selected value="0.5">0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <label for="mark-select"></label>
+                        <select name="mark" id="markEZ12">
+                            <option value=""> Добавьте оценку </option>
+                            <option value="0.1">0.1</option>
+                            <option value="0.2">0.2</option>
+                            <option selected value="0.3">0.3</option>
+                            <option value="0.4">0.4</option>
+                            <option value="0.5">0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <label for="mark-select"></label>
+                        <select name="mark" id="markEZ13">
+                            <option value=""> Добавьте оценку </option>
+                            <option value="0.1">0.1</option>
+                            <option selected value="0.2">0.2</option>
+                            <option value="0.3">0.3</option>
+                            <option value="0.4">0.4</option>
+                            <option value="0.5">0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="ex">Э<span>2</span></td>
+                <td>
+                    <form>
+                        <label for="mark-select"></label>
+                        <select name="mark" id="markEZ21">
+                            <option value=""> Добавьте оценку </option>
+                            <option value="0.1">0.1</option>
+                            <option value="0.2">0.2</option>
+                            <option selected value="0.3">0.3</option>
+                            <option value="0.4">0.4</option>
+                            <option value="0.5">0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <label for="mark-select"></label>
+                        <select name="mark" id="markEZ22">
+                            <option value=""> Добавьте оценку </option>
+                            <option value="0.1">0.1</option>
+                            <option value="0.2">0.2</option>
+                            <option selected value="0.3">0.3</option>
+                            <option value="0.4">0.4</option>
+                            <option value="0.5">0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <label for="mark-select"></label>
+                        <select name="mark" id="markEZ23">
+                            <option value=""> Добавьте оценку </option>
+                            <option value="0.1">0.1</option>
+                            <option value="0.2">0.2</option>
+                            <option value="0.3">0.3</option>
+                            <option selected value="0.4">0.4</option>
+                            <option value="0.5">0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="expert-coefficient">
+        <p class="subtitle">Добавьте коэффициенты компетентности для каждого эксперта:</p>
+        <div class="experts-weight">
+            <div class="expert1">
+                <p class="subtitle">Для первого эксперта R<span>1</span> = </p>
+                <form>
+                    <label for="coef-exp"></label>
+                    <select name="coef" id="coef1">
+                        <option value=""> Добавьте коэффициент </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option selected value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </form>
+            </div>
+            <div class="expert2">
+                <p class="subtitle">Для второго эксперта R<span>2</span> = </p>
+                <form>
+                    <label for="coef-exp"></label>
+                    <select name="coef" id="coef2">
+                        <option value=""> Добавьте коэффициент </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option selected value="9">9</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="reset" onclick="resetCalc()">Очистить</button>
+        <button class="submit" onclick="totalCount()">Отправить</button>
+    </div>
+
+    <div class="coef-weight">
+        <p class="subtitle">Относительные оценки компетентнонсти экспертов:</p>
+        <div class="exp1">
+            <p class="subt">Для первого эксперта = </p>
+            <div class="r1" id="r1"></div>
+            <div class="rr" id="rr1"></div>
+            <div class="wres1" id="wres1"></div>
+        </div>
+        <div class="exp2">
+            <p class="subt">Для второго эксперта = </p>
+            <div class="r2" id="r2"></div>
+            <div class="rr" id="rr2"></div>
+            <div class="wres2" id="wres2"></div>
+        </div>
+    </div>
+
+    <div class="weights">
+        <p class="subtitle">Искомые веса целей:</p>
+        <div class="weight1">
+            <div class="w1">w1 = </div>
+            <div class="w" id="action1"></div>
+            <div class="result1" id="res1"></div>
+        </div>
+        <div class="weight2">
+            <div class="w2">w2 = </div>
+            <div class="w" id="action2"></div>
+            <div class="result2" id="res2"></div>
+        </div>
+        <div class="weight3">
+            <div class="w3">w3 = </div>
+            <div class="w" id="action3"></div>
+            <div class="result3" id="res3"></div>
+        </div>
+    </div>
+
+    <div class="answer">
+        <div class="ans">Ответ:</div>
+        <div class="res" id="res"></div>
+    </div>
+</body>
+
+</html>
